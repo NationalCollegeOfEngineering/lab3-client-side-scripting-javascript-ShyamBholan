@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+<body>
+    <script>document.write('<br>')
+        document.write('Date and Time: <br>')
+        const date= Date()
+        document.write(`${date} <br><br>`)
+        document.write('Time only:')
+        const demoFunction=()=>{
+              document.querySelector('h4').innerHTML=new Date().toLocaleTimeString()
+        }
+        setInterval(demoFunction,1000)
+    </script>
+    <h4></h4>
+</body>
+</html>
