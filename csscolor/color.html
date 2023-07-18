@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color, Opacity, Value and Units</title>
+    <style>
+        .col{
+            width: 48%;
+            float: left;
+            background-color: lightblue;
+            border: solid 5px black;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .opacity{
+            width: 48%;
+            float: right;
+            background-color: lightgreen;
+            border: solid 5px black;
+            padding: 5px;
+        }
+
+        .valunit{
+            clear: both;
+            width: 100%;
+            float: left;
+            background-color: lightsalmon;
+            border: solid 5px black;
+            padding: 5px;
+        }
+        .colname {
+            color: red;
+        }
+
+        .colrgb {
+            color: rgb(211, 124, 11);
+        }
+
+        .colrgbper {
+            color: rgb(75%, 30%, 69%);
+        }
+
+        .colhexa {
+            color: #11b3f3;
+        }
+
+        .scolhexa {
+            color: #1b3;
+        }
+
+        p,.colnote {
+            font-style: italic;
+        }
+        .fullop{
+            color: rgb(17, 13, 248);
+        }
+        .halfintop{
+            color: rgb(17, 13, 248, 0.5);
+        }
+        .halfperop{
+            color: rgb(17, 13, 248, 50%);
+        }
+        h1,p{
+            margin: 0;
+        }
+        b,i{
+            font-size: 30px;
+            color: black;
+        }
+        .px{
+            font-size: 20px;
+        }
+        .vh{
+            font-size: 4vh;
+        }
+        .per{
+            font-size: 80%;
+        }
+        .int{
+            color: rgb(17, 13, 248);
+        }
+        .em{
+            font-size: 1.5em;
+        }
+        .rem{
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="coloropacity">
+        <div class="col">
+            <p>(Using "float:left" and "width:45%")</p>
+            <h1><u>Methods to select color:</u></h1>
+            <h2 class="colname">Using color name (color: red;)</h2>
+            <h2 class="colrgb">Using rgb value (color: rgb(211, 124, 11);)</h2>
+            <h2 class="colrgbper">Using rgb percentage value (color: rgb(75%, 30%, 69%);)</h2>
+            <h2 class="colhexa">Using hexadecimal value (color: #11b3f3;)</h2>
+            <h2 class="scolhexa">Using short hexadecimal value (color: #1b3;)</h2>
+            <h3 class="colnote">
+                (Note: These methods can be applied to any css that uses color)
+            </h3>
+        </div>
+        <div class="opacity">
+            <p>(Using "float:right" and "width:45%")</p>
+            <h1><u>Opacity:</u></h1>
+            <h2 class="fullop">Full Opacity</h2>
+            <h2 class="halfintop">Half Opacity using integer</h2>
+            <h2 class="halfperop">Half Opacity using percentage</h2>
+        </div>
+    </div>
+        <div class="valunit">
+            <p>(pushed below using "clear:both")</p>
+            <h1><u>Value and Units:</u></h1>
+            <h2 class="px"><b>Pixel: </b>font-size: 20px</h2>
+            <h2 class="vh"><b>Viewport height: </b>font-size: 4vh</h2>
+            <h2 class="per"><b>Percentage: </b>font-size: 80%</h2>
+            <h2 class="int"><b>Integer: </b>color: rgb(17, 13, 248)<i> rgb using integer value</i></h2>
+            <h2 class="em"><b>Emphemeral Unit: </b>font-size: 1.5em</h2>
+            <h2 class="rem"><b>Root Emphemeral Unit: </b>font-size: 1.5rem</h2>
+        </div>
+</body>
+
+</html>
